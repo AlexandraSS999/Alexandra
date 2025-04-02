@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)file:///C:/Users/anton/Desktop/Negotiator%20Review.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creditors Relief Negotiations Department Self-Evaluation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 5px;
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+        h3 {
+            background-color: #f8f9fa;
+            padding: 8px;
+            border-left: 4px solid #3498db;
+            margin-top: 25px;
+        }
+        h4 {
+            margin-bottom: 5px;
+            margin-top: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .team-table th {
+            background-color: #3498db;
+            color: white;
+        }
+        .evaluation-table th {
+            background-color: #2c3e50;
+            color: white;
+        }
+        .evaluation-table td:nth-child(n+2) {
+            text-align: center;
+        }
+        .notes-section {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 20px 0;
+            background-color: #f9f9f9;
+        }
+        textarea {
+            width: 100%;
+            min-height: 80px;
+            padding: 10px;
+            box-sizing: border-box;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+        .details-box {
+            width: 100%;
+            min-height: 100px;
+            padding: 10px;
+            box-sizing: border-box;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+        .signature-section {
+            margin-top: 30px;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        input[type="text"], input[type="date"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+        }
+        .signature-box {
+            border: 1px dashed #999;
+            padding: 10px;
+            height: 80px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .signature-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .button {
+            padding: 10px 15px;
+            margin: 10px 0;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+        .button:hover {
+            background-color: #2980b9;
+        }
+        .save-button {
+            background-color: #2ecc71;
+        }
+        .save-button:hover {
+            background-color: #27ae60;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+        .info-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .date-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .feedback-message {
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+            display: none;
+            text-align: center;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .category-header {
+            background-color: #e9ecef;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 10px;
+            margin-top: 20px;
+            border-left: 4px solid #3498db;
+        }
+        .subcategory {
+            background-color: #f8f9fa;
+            font-style: italic;
+            padding: 8px;
+            margin-top: 15px;
+            border-left: 3px solid #6c757d;
+        }
+        .key-metrics {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        .key-metrics input {
+            width: 120px;
+            text-align: right;
+        }
+        .metrics-row {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .metrics-row label {
+            flex: 1;
+        }
+        .section-note {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        .details-label {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                padding: 0;
+                margin: 0;
+            }
+            .container {
+                box-shadow: none;
+                border: none;
+                padding: 10px;
+                width: 100%;
+                max-width: 100%;
+            }
+            button {
+                display: none !important;
+            }
+        }
+    </style>
+    <script src="./Creditors Relief Negotiations Department Self-Evaluation_files/html2pdf.bundle.min.js.download"></script>
+</head>
+<body>
+    <div class="container" id="pdf-content">
+        <h1>Creditors Relief</h1>
+        <h2>Negotiations Department Self-Evaluation</h2>
+        
+        <div class="info-section">
+            <div style="flex: 1;">
+                <p><strong>Negotiator Name:</strong> <input type="text" id="negotiator-name" style="width: 200px;"></p>
+                <p><strong>Team Leader Name:</strong> <input type="text" id="teamleader-name" style="width: 200px;"></p>
+            </div>
+            <div style="flex: 1;">
+                <p><strong>Review Period:</strong> 
+                    <span class="date-group">
+                        From: <input type="date" id="review-period-start">
+                        To: <input type="date" id="review-period-end">
+                    </span>
+                </p>
+                <p><strong>Review Date:</strong> <input type="date" id="review-date"></p>
+            </div>
+        </div>
+        
+        <h3>KEY OBJECTIVES</h3>
+        <div class="key-metrics">
+            <div class="metrics-row">
+                <label><strong>Settled Debt:</strong></label>
+                <input type="number" id="settled-debt" placeholder="$"> out of target <input type="number" id="settled-debt-target" placeholder="$">
+            </div>
+            <div class="metrics-row">
+                <label><strong>1st Fee Collection:</strong></label>
+                <input type="number" id="fee-collection" placeholder="$"> out of target <input type="number" id="fee-collection-target" placeholder="$">
+            </div>
+            <div class="metrics-row">
+                <label><strong>Number of Deals:</strong></label>
+                <input type="number" id="num-deals"> out of target <input type="number" id="num-deals-target">
+            </div>
+            <div class="metrics-row">
+                <label><strong>OVERALL ON KEY OBJECTIVES:</strong></label>
+                <select id="objectives-grade">
+                    <option value="">Select Grade</option>
+                    <option value="A">A - Excellent</option>
+                    <option value="B">B - Above Expectations</option>
+                    <option value="C">C - Meets Expectations</option>
+                    <option value="D">D - Below Expectations</option>
+                    <option value="F">F - Needs Significant Improvement</option>
+                </select>
+            </div>
+        </div>
+        
+        <h3>PERFORMANCE EVALUATION</h3>
+        <p class="section-note">Please honestly assess your performance in each area. Grade yourself from A (Excellent) to F (Needs Significant Improvement).</p>
+        
+        <!-- NEGOTIATION SKILLS -->
+        <div class="category-header">Negotiation Skills</div>
+        <table class="evaluation-table">
+            <tbody><tr>
+                <td>1. How effectively do you negotiate settlements with creditors to reduce client debt?</td>
+                <td><input type="checkbox" name="q1" value="A">A</td>
+                <td><input type="checkbox" name="q1" value="B">B</td>
+                <td><input type="checkbox" name="q1" value="C">C</td>
+                <td><input type="checkbox" name="q1" value="D">D</td>
+                <td><input type="checkbox" name="q1" value="F">F</td>
+            </tr>
+            <tr>
+                <td>2. How well do you secure favorable terms for clients during negotiations?</td>
+                <td><input type="checkbox" name="q2" value="A">A</td>
+                <td><input type="checkbox" name="q2" value="B">B</td>
+                <td><input type="checkbox" name="q2" value="C">C</td>
+                <td><input type="checkbox" name="q2" value="D">D</td>
+                <td><input type="checkbox" name="q2" value="F">F</td>
+            </tr>
+            <tr>
+                <td>3. How skillfully do you overcome objections during creditor negotiations?</td>
+                <td><input type="checkbox" name="q3" value="A">A</td>
+                <td><input type="checkbox" name="q3" value="B">B</td>
+                <td><input type="checkbox" name="q3" value="C">C</td>
+                <td><input type="checkbox" name="q3" value="D">D</td>
+                <td><input type="checkbox" name="q3" value="F">F</td>
+            </tr>
+        </tbody></table>
+        <div class="details-label">Details/Examples (Negotiation Skills):</div>
+        <textarea class="details-box" placeholder="Provide specific examples or details about your negotiation skills performance..."></textarea>
+        
+        <!-- STRATEGY & TACTICS -->
+        <div class="category-header">Strategy &amp; Tactics</div>
+        <table class="evaluation-table">
+            <tbody><tr>
+                <td>4. How effectively do you develop negotiation strategies tailored to each creditor?</td>
+                <td><input type="checkbox" name="q4" value="A">A</td>
+                <td><input type="checkbox" name="q4" value="B">B</td>
+                <td><input type="checkbox" name="q4" value="C">C</td>
+                <td><input type="checkbox" name="q4" value="D">D</td>
+                <td><input type="checkbox" name="q4" value="F">F</td>
+            </tr>
+            <tr>
+                <td>5. How well do you adapt your tactics based on changing circumstances during negotiations?</td>
+                <td><input type="checkbox" name="q5" value="A">A</td>
+                <td><input type="checkbox" name="q5" value="B">B</td>
+                <td><input type="checkbox" name="q5" value="C">C</td>
+                <td><input type="checkbox" name="q5" value="D">D</td>
+                <td><input type="checkbox" name="q5" value="F">F</td>
+            </tr>
+            <tr>
+                <td>6. How effectively do you prioritize accounts to maximize settlement opportunities?</td>
+                <td><input type="checkbox" name="q6" value="A">A</td>
+                <td><input type="checkbox" name="q6" value="B">B</td>
+                <td><input type="checkbox" name="q6" value="C">C</td>
+                <td><input type="checkbox" name="q6" value="D">D</td>
+                <td><input type="checkbox" name="q6" value="F">F</td>
+            </tr>
+        </tbody></table>
+        <div class="details-label">Details/Examples (Strategy &amp; Tactics):</div>
+        <textarea class="details-box" placeholder="Provide specific examples or details about your strategy and tactics..."></textarea>
+        
+        <!-- CREDITOR COMMUNICATION -->
+        <div class="category-header">Creditor Communication</div>
+        <table class="evaluation-table">
+            <tbody><tr>
+                <td>7. How well do you build and maintain professional relationships with creditors?</td>
+                <td><input type="checkbox" name="q7" value="A">A</td>
+                <td><input type="checkbox" name="q7" value="B">B</td>
+                <td><input type="checkbox" name="q7" value="C">C</td>
+                <td><input type="checkbox" name="q7" value="D">D</td>
+                <td><input type="checkbox" name="q7" value="F">F</td>
+            </tr>
+            <tr>
+                <td>8. How effectively do you communicate client situations to gain creditor cooperation?</td>
+                <td><input type="checkbox" name="q8" value="A">A</td>
+                <td><input type="checkbox" name="q8" value="B">B</td>
+                <td><input type="checkbox" name="q8" value="C">C</td>
+                <td><input type="checkbox" name="q8" value="D">D</td>
+                <td><input type="checkbox" name="q8" value="F">F</td>
+            </tr>
+            <tr>
+                <td>9. How clearly do you document and communicate settlement terms to all parties?</td>
+                <td><input type="checkbox" name="q9" value="A">A</td>
+                <td><input type="checkbox" name="q9" value="B">B</td>
+                <td><input type="checkbox" name="q9" value="C">C</td>
+                <td><input type="checkbox" name="q9" value="D">D</td>
+                <td><input type="checkbox" name="q9" value="F">F</td>
+            </tr>
+        </tbody></table>
+        <div class="details-label">Details/Examples (Creditor Communication):</div>
+        <textarea class="details-box" placeholder="Provide specific examples or details about your creditor communication..."></textarea>
+        
+        <!-- PERSISTENCE & FOLLOW-UP -->
+        <div class="category-header">Persistence &amp; Follow-Up</div>
+        <table class="evaluation-table">
+            <tbody><tr>
+                <td>10. How consistently do you follow up on pending negotiations?</td>
+                <td><input type="checkbox" name="q10" value="A">A</td>
+                <td><input type="checkbox" name="q10" value="B">B</td>
+                <td><input type="checkbox" name="q10" value="C">C</td>
+                <td><input type="checkbox" name="q10" value="D">D</td>
+                <td><input type="checkbox" name="q10" value="F">F</td>
+            </tr>
+            <tr>
+                <td>11. How effectively do you persist through challenges to reach settlement goals?</td>
+                <td><input type="checkbox" name="q11" value="A">A</td>
+                <td><input type="checkbox" name="q11" value="B">B</td>
+                <td><input type="checkbox" name="q11" value="C">C</td>
+                <td><input type="checkbox" name="q11" value="D">D</td>
+                <td><input type="checkbox" name="q11" value="F">F</td>
+            </tr>
+            <tr>
+                <td>12. How well do you manage deadlines and time-sensitive negotiations?</td>
+                <td><input type="checkbox" name="q12" value="A">A</td>
+                <td><input type="checkbox" name="q12" value="B">B</td>
+                <td><input type="checkbox" name="q12" value="C">C</td>
+                <td><input type="checkbox" name="q12" value="D">D</td>
+                <td><input type="checkbox" name="q12" value="F">F</td>
+            </tr>
+        </tbody></table>
+        <div class="details-label">Details/Examples (Persistence &amp; Follow-Up):</div>
+        <textarea class="details-box" placeholder="Provide specific examples or details about your persistence and follow-up..."></textarea>
+        
+        <!-- CREATIVE PROBLEM SOLVING -->
+        <div class="category-header">Creative Problem Solving</div>
+        <table class="evaluation-table">
+            <tbody><tr>
+                <td>13. How effectively do you find creative solutions for challenging accounts?</td>
+                <td><input type="checkbox" name="q13" value="A">A</td>
+                <td><input type="checkbox" name="q13" value="B">B</td>
+                <td><input type="checkbox" name="q13" value="C">C</td>
+                <td><input type="checkbox" name="q13" value="D">D</td>
+                <td><input type="checkbox" name="q13" value="F">F</td>
+            </tr>
+            <tr>
+                <td>14. How well do you balance client needs with creditor requirements?</td>
+                <td><input type="checkbox" name="q14" value="A">A</td>
+                <td><input type="checkbox" name="q14" value="B">B</td>
+                <td><input type="checkbox" name="q14" value="C">C</td>
+                <td><input type="checkbox" name="q14" value="D">D</td>
+                <td><input type="checkbox" name="q14" value="F">F</td>
+            </tr>
+            <tr>
+                <td>15. How creatively do you approach unusual or difficult debt situations?</td>
+                <td><input type="checkbox" name="q15" value="A">A</td>
+                <td><input type="checkbox" name="q15" value="B">B</td>
+                <td><input type="checkbox" name="q15" value="C">C</td>
+                <td><input type="checkbox" name="q15" value="D">D</td>
+                <td><input type="checkbox" name="q15" value="F">F</td>
+            </tr>
+        </tbody></table>
+        <div class="details-label">Details/Examples (Creative Problem Solving):</div>
+        <textarea class="details-box" placeholder="Provide specific examples or details about your creative problem solving..."></textarea>
+        
+        <!-- TEAMWORK & COLLABORATION -->
+        <div class="category-header">Teamwork &amp; Collaboration</div>
+        <table class="evaluation-table">
+            <tbody><tr>
+                <td>16. How effectively do you collaborate with customer service representatives as a team?</td>
+                <td><input type="checkbox" name="q16" value="A">A</td>
+                <td><input type="checkbox" name="q16" value="B">B</td>
+                <td><input type="checkbox" name="q16" value="C">C</td>
+                <td><input type="checkbox" name="q16" value="D">D</td>
+                <td><input type="checkbox" name="q16" value="F">F</td>
+            </tr>
+            <tr>
+                <td>17. How well do you communicate with your team leader and manager?</td>
+                <td><input type="checkbox" name="q17" value="A">A</td>
+                <td><input type="checkbox" name="q17" value="B">B</td>
+                <td><input type="checkbox" name="q17" value="C">C</td>
+                <td><input type="checkbox" name="q17" value="D">D</td>
+                <td><input type="checkbox" name="q17" value="F">F</td>
+            </tr>
+            <tr>
+                <td>18. How actively do you share knowledge and best practices with colleagues?</td>
+                <td><input type="checkbox" name="q18" value="A">A</td>
+                <td><input type="checkbox" name="q18" value="B">B</td>
+                <td><input type="checkbox" name="q18" value="C">C</td>
+                <td><input type="checkbox" name="q18" value="D">D</td>
+                <td><input type="checkbox" name="q18" value="F">F</td>
+            </tr>
+        </tbody></table>
+        <div class="details-label">Details/Examples (Teamwork &amp; Collaboration):</div>
+        <textarea class="details-box" placeholder="Provide specific examples or details about your teamwork and collaboration..."></textarea>
+        
+        <!-- PROFESSIONALISM & COMMUNICATION -->
+        <div class="category-header">Professionalism &amp; Communication</div>
+        <div class="subcategory">Email Quality</div>
+        <table class="evaluation-table">
+            <tbody><tr>
+                <td>19. How well do your emails demonstrate appropriate tone and professionalism?</td>
+                <td><input type="checkbox" name="q19" value="A">A</td>
+                <td><input type="checkbox" name="q19" value="B">B</td>
+                <td><input type="checkbox" name="q19" value="C">C</td>
+                <td><input type="checkbox" name="q19" value="D">D</td>
+                <td><input type="checkbox" name="q19" value="F">F</td>
+            </tr>
+            <tr>
+                <td>20. How responsive are you to email communications?</td>
+                <td><input type="checkbox" name="q20" value="A">A</td>
+                <td><input type="checkbox" name="q20" value="B">B</td>
+                <td><input type="checkbox" name="q20" value="C">C</td>
+                <td><input type="checkbox" name="q20" value="D">D</td>
+                <td><input type="checkbox" name="q20" value="F">F</td>
+            </tr>
+            <tr>
+                <td>21. How polished, tactful, and clear are your email communications?</td>
+                <td><input type="checkbox" name="q21" value="A">A</td>
+                <td><input type="checkbox" name="q21" value="B">B</td>
+                <td><input type="checkbox" name="q21" value="C">C</td>
+                <td><input type="checkbox" name="q21" value="D">D</td>
+                <td><input type="checkbox" name="q21" value="F">F</td>
+            </tr>
+        </tbody></table>
+        <div class="details-label">Details/Examples (Email Quality):</div>
+        <textarea class="details-box" placeholder="Provide specific examples or details about your email quality..."></textarea>
+        
+        <div class="subcategory">Internal Communication</div>
+        <table class="evaluation-table">
+            <tbody><tr>
+                <td>22. How patient are you when communicating with colleagues?</td>
+                <td><input type="checkbox" name="q22" value="A">A</td>
+                <td><input type="checkbox" name="q22" value="B">B</td>
+                <td><input type="checkbox" name="q22" value="C">C</td>
+                <td><input type="checkbox" name="q22" value="D">D</td>
+                <td><input type="checkbox" name="q22" value="F">F</td>
+            </tr>
+            <tr>
+                <td>23. How willing are you to help colleagues with their questions or challenges?</td>
+                <td><input type="checkbox" name="q23" value="A">A</td>
+                <td><input type="checkbox" name="q23" value="B">B</td>
+                <td><input type="checkbox" name="q23" value="C">C</td>
+                <td><input type="checkbox" name="q23" value="D">D</td>
+                <td><input type="checkbox" name="q23" value="F">F</td>
+            </tr>
+            <tr>
+                <td>24. How professional is your manner of communication with team members?</td>
+                <td><input type="checkbox" name="q24" value="A">A</td>
+                <td><input type="checkbox" name="q24" value="B">B</td>
+                <td><input type="checkbox" name="q24" value="C">C</td>
+                <td><input type="checkbox" name="q24" value="D">D</td>
+                <td><input type="checkbox" name="q24" value="F">F</td>
+            </tr>
+        </tbody></table>
+        <div class="details-label">Details/Examples (Internal Communication):</div>
+        <textarea class="details-box" placeholder="Provide specific examples or details about your internal communication..."></textarea>
+        
+        <!-- INDEPENDENCE -->
+        <div class="category-header">Independence</div>
+        <table class="evaluation-table">
+            <tbody><tr>
+                <td>25. How well do you take responsibility for your assigned accounts?</td>
+                <td><input type="checkbox" name="q25" value="A">A</td>
+                <td><input type="checkbox" name="q25" value="B">B</td>
+                <td><input type="checkbox" name="q25" value="C">C</td>
+                <td><input type="checkbox" name="q25" value="D">D</td>
+                <td><input type="checkbox" name="q25" value="F">F</td>
+            </tr>
+            <tr>
+                <td>26. How well do you accept accountability for outcomes?</td>
+                <td><input type="checkbox" name="q26" value="A">A</td>
+                <td><input type="checkbox" name="q26" value="B">B</td>
+                <td><input type="checkbox" name="q26" value="C">C</td>
+                <td><input type="checkbox" name="q26" value="D">D</td>
+                <td><input type="checkbox" name="q26" value="F">F</td>
+            </tr>
+            <tr>
+                <td>27. How self-motivated are you in pursuing settlements?</td>
+                <td><input type="checkbox" name="q27" value="A">A</td>
+                <td><input type="checkbox" name="q27" value="B">B</td>
+                <td><input type="checkbox" name="q27" value="C">C</td>
+                <td><input type="checkbox" name="q27" value="D">D</td>
+                <td><input type="checkbox" name="q27" value="F">F</td>
+            </tr>
+            <tr>
+                <td>28. How effectively do you make decisions under pressure?</td>
+                <td><input type="checkbox" name="q28" value="A">A</td>
+                <td><input type="checkbox" name="q28" value="B">B</td>
+                <td><input type="checkbox" name="q28" value="C">C</td>
+                <td><input type="checkbox" name="q28" value="D">D</td>
+                <td><input type="checkbox" name="q28" value="F">F</td>
+            </tr>
+        </tbody></table>
+        <div class="details-label">Details/Examples (Independence):</div>
+        <textarea class="details-box" placeholder="Provide specific examples or details about your independence..."></textarea>
+        
+        <!-- FEEDBACK RESPONSE -->
+        <div class="category-header">Feedback Response</div>
+        <table class="evaluation-table">
+            <tbody><tr>
+                <td>29. How well do you set up mutual goals with team members?</td>
+                <td><input type="checkbox" name="q29" value="A">A</td>
+                <td><input type="checkbox" name="q29" value="B">B</td>
+                <td><input type="checkbox" name="q29" value="C">C</td>
+                <td><input type="checkbox" name="q29" value="D">D</td>
+                <td><input type="checkbox" name="q29" value="F">F</td>
+            </tr>
+            <tr>
+                <td>30. How openly and respectfully do you listen to constructive criticism?</td>
+                <td><input type="checkbox" name="q30" value="A">A</td>
+                <td><input type="checkbox" name="q30" value="B">B</td>
+                <td><input type="checkbox" name="q30" value="C">C</td>
+                <td><input type="checkbox" name="q30" value="D">D</td>
+                <td><input type="checkbox" name="q30" value="F">F</td>
+            </tr>
+            <tr>
+                <td>31. How consistently do you implement suggestions in future work?</td>
+                <td><input type="checkbox" name="q31" value="A">A</td>
+                <td><input type="checkbox" name="q31" value="B">B</td>
+                <td><input type="checkbox" name="q31" value="C">C</td>
+                <td><input type="checkbox" name="q31" value="D">D</td>
+                <td><input type="checkbox" name="q31" value="F">F</td>
+            </tr>
+            <tr>
+                <td>32. How effectively do you use feedback for professional development?</td>
+                <td><input type="checkbox" name="q32" value="A">A</td>
+                <td><input type="checkbox" name="q32" value="B">B</td>
+                <td><input type="checkbox" name="q32" value="C">C</td>
+                <td><input type="checkbox" name="q32" value="D">D</td>
+                <td><input type="checkbox" name="q32" value="F">F</td>
+            </tr>
+        </tbody></table>
+        <div class="details-label">Details/Examples (Feedback Response):</div>
+        <textarea class="details-box" placeholder="Provide specific examples or details about how you respond to feedback..."></textarea>
+        
+        <!-- FILE DOCUMENTATION -->
+        <div class="category-header">File Documentation</div>
+        <table class="evaluation-table">
+            <tbody><tr>
+                <td>33. How consistently do you upload required documentation?</td>
+                <td><input type="checkbox" name="q33" value="A">A</td>
+                <td><input type="checkbox" name="q33" value="B">B</td>
+                <td><input type="checkbox" name="q33" value="C">C</td>
+                <td><input type="checkbox" name="q33" value="D">D</td>
+                <td><input type="checkbox" name="q33" value="F">F</td>
+            </tr>
+            <tr>
+                <td>34. How detailed are your notes after calls with creditors?</td>
+                <td><input type="checkbox" name="q34" value="A">A</td>
+                <td><input type="checkbox" name="q34" value="B">B</td>
+                <td><input type="checkbox" name="q34" value="C">C</td>
+                <td><input type="checkbox" name="q34" value="D">D</td>
+                <td><input type="checkbox" name="q34" value="F">F</td>
+            </tr>
+            <tr>
+                <td>35. How thoroughly do you ensure all emails are properly filed?</td>
+                <td><input type="checkbox" name="q35" value="A">A</td>
+                <td><input type="checkbox" name="q35" value="B">B</td>
+                <td><input type="checkbox" name="q35" value="C">C</td>
+                <td><input type="checkbox" name="q35" value="D">D</td>
+                <td><input type="checkbox" name="q35" value="F">F</td>
+            </tr>
+        </tbody></table>
+        <div class="details-label">Details/Examples (File Documentation):</div>
+        <textarea class="details-box" placeholder="Provide specific examples or details about your file documentation practices..."></textarea>
+        
+        <div class="notes-section">
+            <h3>Employee Additional Comments</h3>
+            <p>Please provide any additional context, accomplishments, or challenges you would like to highlight:</p>
+            <textarea placeholder="Enter your comments here..." id="employee-comments"></textarea>
+        </div>
+        
+        <div class="signature-section">
+            <h3>Employee Signature</h3>
+            <div class="signature-box" id="employee-signature-box">
+                <canvas class="signature-canvas" id="employee-signature-canvas" width="900" height="102"></canvas>
+            </div>
+            <button class="button no-print" id="clear-employee-signature">Clear Signature</button>
+            <div style="display: flex; gap: 20px; margin-top: 15px;">
+                <div style="flex: 1;">
+                    <p><strong>Type your name:</strong></p>
+                    <input type="text" placeholder="Type your name" id="employee-typed-signature">
+                </div>
+                <div style="flex: 1;">
+                    <p><strong>Date:</strong></p>
+                    <input type="date" id="employee-signature-date">
+                </div>
+            </div>
+        </div>
+        
+        <div class="feedback-message success" id="save-feedback">
+            Self-evaluation completed! Your PDF is being generated.
+        </div>
+    </div>
+    
+    <div class="button-container no-print">
+        <p style="text-align: center; font-weight: bold; margin-bottom: 15px;">Please complete, save as PDF and email this to your team leader</p>
+        <button class="button save-button" id="save-as-pdf">Complete &amp; Save as PDF</button>
+        <button class="button" id="print-form">Print Form</button>
+    </div>
+
+    <script>
+        // Function to handle signature drawing
+        function setupSignatureCanvas() {
+            const canvas = document.getElementById('employee-signature-canvas');
+            const clearButton = document.getElementById('clear-employee-signature');
+            const ctx = canvas.getContext('2d');
+            let isDrawing = false;
+            
+            // Set canvas size to match parent container
+            function resizeCanvas() {
+                const container = canvas.parentElement;
+                canvas.width = container.offsetWidth;
+                canvas.height = container.offsetHeight;
+                ctx.lineWidth = 2;
+                ctx.lineJoin = 'round';
+                ctx.lineCap = 'round';
+                ctx.strokeStyle = 'black';
+            }
+            
+            resizeCanvas();
+            window.addEventListener('resize', resizeCanvas);
+            
+            // Drawing event handlers
+            canvas.addEventListener('mousedown', startDrawing);
+            canvas.addEventListener('touchstart', startDrawing);
+            
+            canvas.addEventListener('mousemove', draw);
+            canvas.addEventListener('touchmove', draw);
+            
+            canvas.addEventListener('mouseup', stopDrawing);
+            canvas.addEventListener('touchend', stopDrawing);
+            canvas.addEventListener('mouseout', stopDrawing);
+            
+            clearButton.addEventListener('click', clearCanvas);
+            
+            function startDrawing(e) {
+                isDrawing = true;
+                draw(e);
+            }
+            
+            function draw(e) {
+                if (!isDrawing) return;
+                
+                e.preventDefault();
+                
+                let x, y;
+                
+                if (e.type.includes('mouse')) {
+                    x = e.offsetX;
+                    y = e.offsetY;
+                } else {
+                    const rect = canvas.getBoundingClientRect();
+                    const touch = e.touches[0];
+                    x = touch.clientX - rect.left;
+                    y = touch.clientY - rect.top;
+                }
+                
+                ctx.lineTo(x, y);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(x, y);
+            }
+            
+            function stopDrawing() {
+                isDrawing = false;
+                ctx.beginPath();
+            }
+            
+            function clearCanvas() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+            }
+        }
+        
+        // Make checkboxes exclusive in each row
+        function setupCheckboxes() {
+            document.querySelectorAll('.evaluation-table tr').forEach(row => {
+                const checkboxes = row.querySelectorAll('input[type="checkbox"]');
+                checkboxes.forEach(checkbox => {
+                    checkbox.addEventListener('change', function() {
+                        if (this.checked) {
+                            checkboxes.forEach(cb => {
+                                if (cb !== this) cb.checked = false;
+                            });
+                        }
+                    });
+                });
+            });
+        }
+        
+        // Generate PDF function
+        function generatePDF() {
+            // Show feedback message
+            document.getElementById('save-feedback').style.display = 'block';
+            
+            // Hide buttons during PDF generation
+            const buttonContainer = document.querySelector('.button-container');
+            buttonContainer.style.display = 'none';
+            
+            // Get employee name for filename
+            const employeeName = document.getElementById('negotiator-name').value || 'Employee';
+            const date = new Date().toISOString().slice(0, 10);
+            const fileName = `${employeeName}_SelfEvaluation_${date}.pdf`;
+            
+            // Configure PDF options
+            const options = {
+                margin: 10,
+                filename: fileName,
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+            
+            // Generate PDF
+            html2pdf().set(options).from(document.getElementById('pdf-content')).save().then(() => {
+                // Show buttons again after PDF is generated
+                buttonContainer.style.display = 'flex';
+                
+                // Hide feedback after 3 seconds
+                setTimeout(() => {
+                    document.getElementById('save-feedback').style.display = 'none';
+                }, 3000);
+            });
+        }
+        
+        // Print form function
+        function printForm() {
+            window.print();
+        }
+        
+        // Setup when document is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            // Setup signature canvas
+            setupSignatureCanvas();
+            
+            // Setup checkboxes
+            setupCheckboxes();
+            
+            // Add save and print functionality
+            document.getElementById('save-as-pdf').addEventListener('click', generatePDF);
+            document.getElementById('print-form').addEventListener('click', printForm);
+            
+            // Set today's date as default for date fields
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('review-date').value = today;
+            document.getElementById('employee-signature-date').value = today;
+        });
+    </script>
+
+</body></html>
